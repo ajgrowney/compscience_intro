@@ -1,0 +1,92 @@
+<html>
+<!--
+/////////////////////////////////////////////////////////////////////////////
+///File: admin.html
+///Author: Andrew Growney, Kaiser Mittenburg, Juzer Zarif,
+///Purpose: HTML file to show the admin page
+///Last Modified: 9/17/2017
+/////////////////////////////////////////////////////////////////////////////
+-->
+  <head>
+    <link rel = "stylesheet" href="css/useradmin.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src = "js/admin.js"></script>
+  </head>
+
+<body>
+  <!-- Top horizontal bar of screen -->
+  <div class="mainwrap">
+    <div class="mainone">
+    <br><a id="ret_home" href = "../" style = "color:white">Back To Home</a>
+      <center>
+        <br>
+        <h1> Admin Event Planner </h1>
+        <h6> by <span class="groupname">Purple C#bras</span></h6>
+
+      </center>
+    </div>
+
+    <!-- Leftmost vertical bar with navigation buttons -->
+    <div class="maintwo">
+      <br><br>
+      <p id = "Events"></p>
+      <button type="button" id="create_event" class="side_menu">Create New Event</button>
+      <button type="button" id="review_event" class="side_menu">Review Event</button>
+      <br>
+    </div>
+    <!-- Bulk of middle page with text boxes and buttons -->
+    <div class="mainthree">
+
+      <br><br>
+      <center>
+        <p hidden>
+          <form name = "event_details" id="event_form" action = "" method = "GET" hidden>
+            User Name: <input type = "text" id = "admin_name" name = "admin_name" placeholder="(required)">
+            <br><br>
+            Event Name: <input type = "text" id = "event_name" name = "event_name" placeholder="(required)">
+            <br><br>
+            Date: <input type = "date" id = "datepicker" name = "event_date">
+            <br><br>
+            Event Time:
+            <br>
+            <p>
+            <input type = "button" name = "12_time_select" id = "time_select_12" value = "12 Hour Format">
+            <input type = "button" name = "24_time_select" id = "time_select_24" value = "24 Hour Format">
+            <br>
+            </p>
+            <p id = "event_time_12"></p>
+            <p id = "event_time_24"></p>
+            <br>
+            <input type = "button" name = "submit" id="submit_button" value = "Submit" onClick = "formData(this.form)">
+          </form>
+        </p>
+
+        <p hidden>
+          <form name = "review" id = "review" hidden>
+            User Name: <input type = "text" id = "review_admin_name" name = "review_admin_name" placeholder="(required)">
+            <br><br>
+            Event Name: <input type = "text" id = "review_event_name" name = "review_event_name" placeholder="(required)">
+            <br><br>
+            <input type = "button" id = "review_submit" name = "review_submit" value = "Submit">
+          </form>
+        </p>
+
+        <p id = "review_details" hidden>
+          <p id = "event_review"></p>
+          <button type = "button" class="rev_button_format" id = "12_review" hidden>12 Hour Format</button>
+          <button type = "button" class="rev_button_format" id = "24_review" hidden>24 Hour Format</button>
+
+          <p id = "review_table_12"></p>
+          <p id = "review_table_24"></p>
+        </p>
+      </center>
+
+    </div>
+  </div>
+</body>
+
+</html>

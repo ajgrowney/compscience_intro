@@ -1,0 +1,232 @@
+\hypertarget{classlinked_list}{}\section{linked\+List$<$ T $>$ Class Template Reference}
+\label{classlinked_list}\index{linked\+List$<$ T $>$@{linked\+List$<$ T $>$}}
+
+
+{\ttfamily \#include $<$linked\+List.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlinked_list_a63f463149258669636253a7977157c9c}{linked\+List} ()
+\item 
+\hyperlink{classlinked_list_ab1a1db35879ca07c40b68ccb2b05d150}{$\sim$linked\+List} ()
+\item 
+bool \hyperlink{classlinked_list_a50bf51fe7736a2dcb925a6959b7d9b16}{is\+Empty} () const
+\item 
+int \hyperlink{classlinked_list_a8e4c7120a78d276a617f20e06f657fb1}{size} () const
+\item 
+bool \hyperlink{classlinked_list_a5b5b1d9157fc0a5832d7b4889ff96d46}{search} (T value) const
+\item 
+void \hyperlink{classlinked_list_ab2352d0baa1972fc01643a5ff27fe0ae}{print\+List} () const
+\item 
+void \hyperlink{classlinked_list_a228718a0b785bd1f8b987962774f177f}{add\+Back} (T value)
+\item 
+void \hyperlink{classlinked_list_af96d3e766bbd2f1c62edc49fb1c66fc6}{add\+Front} (T value)
+\item 
+bool \hyperlink{classlinked_list_a4c07d7c746d1aa4edc9d75b1e45987e9}{remove\+Back} ()
+\item 
+bool \hyperlink{classlinked_list_a950409c8ae9d09a1d930f5d9f1b84a23}{remove\+Front} ()
+\item 
+void \hyperlink{classlinked_list_addb0fd9389aa4a6e814c230b49713110}{sort\+List} ()
+\item 
+bool \hyperlink{classlinked_list_a011f58721a9d41f5cac88ed761855871}{compare\+Dates} (T value0, T value1)
+\item 
+std\+::vector$<$ T $>$ \hyperlink{classlinked_list_ac520d6ebd99194ed4589245bfb332903}{to\+Vector} () const
+\item 
+bool \hyperlink{classlinked_list_aa18ea45a38e5593b8adc1e79029b3977}{insert} (int position, T value)
+\item 
+T \hyperlink{classlinked_list_a612ab14fb37fa98281b3e8cf916f41c6}{get\+Entry} (int position) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class linked\+List$<$ T $>$}
+
+Templated \hyperlink{classlinked_list}{linked\+List} class. This defines all of the \hyperlink{classlinked_list}{linked\+List} private member variables and public \hyperlink{classlinked_list}{linked\+List} methods. \begin{DoxyAuthor}{Author}
+Giovanni Artavia 
+
+Brandon Lammey 
+
+Dylan Herrig 
+
+James Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlinked_list_a63f463149258669636253a7977157c9c}\label{classlinked_list_a63f463149258669636253a7977157c9c}} 
+\index{linked\+List@{linked\+List}!linked\+List@{linked\+List}}
+\index{linked\+List@{linked\+List}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{linked\+List()}{linkedList()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::\hyperlink{classlinked_list}{linked\+List} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor for the \hyperlink{classlinked_list}{linked\+List} class. \mbox{\Hypertarget{classlinked_list_ab1a1db35879ca07c40b68ccb2b05d150}\label{classlinked_list_ab1a1db35879ca07c40b68ccb2b05d150}} 
+\index{linked\+List@{linked\+List}!````~linked\+List@{$\sim$linked\+List}}
+\index{````~linked\+List@{$\sim$linked\+List}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{$\sim$linked\+List()}{~linkedList()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::$\sim$\hyperlink{classlinked_list}{linked\+List} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor for the \hyperlink{classlinked_list}{linked\+List} class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlinked_list_a228718a0b785bd1f8b987962774f177f}\label{classlinked_list_a228718a0b785bd1f8b987962774f177f}} 
+\index{linked\+List@{linked\+List}!add\+Back@{add\+Back}}
+\index{add\+Back@{add\+Back}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{add\+Back()}{addBack()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::add\+Back (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})}
+
+Public method that takes one argument of type T and does not return. Details\+: Adds node containing value of type T to the back of the \hyperlink{classlinked_list}{linked\+List}. If empty, adds to the front. Increments size. 
+\begin{DoxyParams}{Parameters}
+{\em value} & the first argument. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlinked_list_af96d3e766bbd2f1c62edc49fb1c66fc6}\label{classlinked_list_af96d3e766bbd2f1c62edc49fb1c66fc6}} 
+\index{linked\+List@{linked\+List}!add\+Front@{add\+Front}}
+\index{add\+Front@{add\+Front}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{add\+Front()}{addFront()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::add\+Front (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})}
+
+Public method that takes one argument of type T and does not return. Details\+: Adds node containing value of type T to the front of the \hyperlink{classlinked_list}{linked\+List}. Increments size. 
+\begin{DoxyParams}{Parameters}
+{\em value} & the first argument. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlinked_list_a011f58721a9d41f5cac88ed761855871}\label{classlinked_list_a011f58721a9d41f5cac88ed761855871}} 
+\index{linked\+List@{linked\+List}!compare\+Dates@{compare\+Dates}}
+\index{compare\+Dates@{compare\+Dates}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{compare\+Dates()}{compareDates()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::compare\+Dates (\begin{DoxyParamCaption}\item[{T}]{value0,  }\item[{T}]{value1 }\end{DoxyParamCaption})}
+
+Public method that takes in two arguments and returns a bool. Details\+: Compares dates of two adjacent nodes and determines which is more recent. 
+\begin{DoxyParams}{Parameters}
+{\em value0} & is the first argument. \\
+\hline
+{\em value1} & is the second argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if value0 is less than value1, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlinked_list_a612ab14fb37fa98281b3e8cf916f41c6}\label{classlinked_list_a612ab14fb37fa98281b3e8cf916f41c6}} 
+\index{linked\+List@{linked\+List}!get\+Entry@{get\+Entry}}
+\index{get\+Entry@{get\+Entry}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{get\+Entry()}{getEntry()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::get\+Entry (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption}) const}
+
+Public method that takes in one argument and returns a value of type T. Details\+: Grabs value of type T from given position in the \hyperlink{classlinked_list}{linked\+List}. 
+\begin{DoxyParams}{Parameters}
+{\em position} & is the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value from position in the \hyperlink{classlinked_list}{linked\+List}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlinked_list_aa18ea45a38e5593b8adc1e79029b3977}\label{classlinked_list_aa18ea45a38e5593b8adc1e79029b3977}} 
+\index{linked\+List@{linked\+List}!insert@{insert}}
+\index{insert@{insert}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{int}]{position,  }\item[{T}]{value }\end{DoxyParamCaption})}
+
+Public method that takes in two arguments and returns a bool. Details\+: Adds node containing value of type T to a given spot in the \hyperlink{classlinked_list}{linked\+List}. Increments size. 
+\begin{DoxyParams}{Parameters}
+{\em position} & is the first argument. \\
+\hline
+{\em value} & is the second argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if value is inserted succesfully at correct position, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlinked_list_a50bf51fe7736a2dcb925a6959b7d9b16}\label{classlinked_list_a50bf51fe7736a2dcb925a6959b7d9b16}} 
+\index{linked\+List@{linked\+List}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{is\+Empty()}{isEmpty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Public method that takes in no arguments and returns a bool. \begin{DoxyReturn}{Returns}
+true if the list is empty, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlinked_list_ab2352d0baa1972fc01643a5ff27fe0ae}\label{classlinked_list_ab2352d0baa1972fc01643a5ff27fe0ae}} 
+\index{linked\+List@{linked\+List}!print\+List@{print\+List}}
+\index{print\+List@{print\+List}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{print\+List()}{printList()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::print\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Public method that takes no arguments and does not return. Details\+: Prints \hyperlink{classlinked_list}{linked\+List} to console. If empty, prints a message stating so. \mbox{\Hypertarget{classlinked_list_a4c07d7c746d1aa4edc9d75b1e45987e9}\label{classlinked_list_a4c07d7c746d1aa4edc9d75b1e45987e9}} 
+\index{linked\+List@{linked\+List}!remove\+Back@{remove\+Back}}
+\index{remove\+Back@{remove\+Back}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{remove\+Back()}{removeBack()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::remove\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Public method that takes in no arguments and returns a bool. Details\+: Removes a node from the back of the \hyperlink{classlinked_list}{linked\+List}. Decrements size. \begin{DoxyReturn}{Returns}
+true if the removal is successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlinked_list_a950409c8ae9d09a1d930f5d9f1b84a23}\label{classlinked_list_a950409c8ae9d09a1d930f5d9f1b84a23}} 
+\index{linked\+List@{linked\+List}!remove\+Front@{remove\+Front}}
+\index{remove\+Front@{remove\+Front}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{remove\+Front()}{removeFront()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::remove\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Public method that takes in no arguments and returns a bool. Details\+: Removes a node from the front of the \hyperlink{classlinked_list}{linked\+List}. Decrements size. \begin{DoxyReturn}{Returns}
+true if the removal is successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlinked_list_a5b5b1d9157fc0a5832d7b4889ff96d46}\label{classlinked_list_a5b5b1d9157fc0a5832d7b4889ff96d46}} 
+\index{linked\+List@{linked\+List}!search@{search}}
+\index{search@{search}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::search (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption}) const}
+
+Public method that takes one argument of type T and returns a bool. Details\+: Searches \hyperlink{classlinked_list}{linked\+List} for value of type T. 
+\begin{DoxyParams}{Parameters}
+{\em value} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the value exists in any node in the \hyperlink{classlinked_list}{linked\+List}, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlinked_list_a8e4c7120a78d276a617f20e06f657fb1}\label{classlinked_list_a8e4c7120a78d276a617f20e06f657fb1}} 
+\index{linked\+List@{linked\+List}!size@{size}}
+\index{size@{size}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Public method that takes no arguments and returns an int. \begin{DoxyReturn}{Returns}
+size of the \hyperlink{classlinked_list}{linked\+List}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlinked_list_addb0fd9389aa4a6e814c230b49713110}\label{classlinked_list_addb0fd9389aa4a6e814c230b49713110}} 
+\index{linked\+List@{linked\+List}!sort\+List@{sort\+List}}
+\index{sort\+List@{sort\+List}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{sort\+List()}{sortList()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::sort\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Public method that takes in no arguments and does not return. Details\+: Sorts the \hyperlink{classlinked_list}{linked\+List} based on date using a bubble sort. \mbox{\Hypertarget{classlinked_list_ac520d6ebd99194ed4589245bfb332903}\label{classlinked_list_ac520d6ebd99194ed4589245bfb332903}} 
+\index{linked\+List@{linked\+List}!to\+Vector@{to\+Vector}}
+\index{to\+Vector@{to\+Vector}!linked\+List@{linked\+List}}
+\subsubsection{\texorpdfstring{to\+Vector()}{toVector()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$ T $>$ \hyperlink{classlinked_list}{linked\+List}$<$ T $>$\+::to\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Public method that takes in no arguments and returns a vector of type T. Details\+: Creates new vector. Copies contents of \hyperlink{classlinked_list}{linked\+List} into new vecotr. \begin{DoxyReturn}{Returns}
+a standard vector with the contents of the \hyperlink{classlinked_list}{linked\+List} inside. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+linked\+List.\+h\item 
+linked\+List.\+hpp\end{DoxyCompactItemize}

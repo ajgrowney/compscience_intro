@@ -1,0 +1,39 @@
+<?php
+
+//Connecting to mySQL
+$servername = "mysql.eecs.ku.edu";
+$username = "agrowney";
+$password = 'P@$$word123';
+
+$conn = new mysqli($servername,$username,$password, $username);
+if($conn->connect_error){
+  die("Connection Failed: ".$conn->connect_error);
+}
+
+?>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main_viewUserPosts.css">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+  <div class="header">
+    <h1> Simple Message Board </h1>
+  </div>
+
+  <form method="post" action="ViewUserPosts.php">
+    <select name='userList' id="userPostSelection">
+      <?php
+      $sql = "SELECT * FROM Users";
+      $result = $conn->query($sql);
+      while($row = $result->fetch_assoc()){
+        echo "<option value=".$row['user_id'].">".$row['user_id']."</option>";
+        }
+        echo "<br>";
+       ?>
+     </select>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

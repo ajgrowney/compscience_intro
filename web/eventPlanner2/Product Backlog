@@ -1,0 +1,67 @@
+Features:
+1) Multi-day Scheduling 
+  - Event creation should now include the option to schedule times (still half hour block) across multiple days
+  - Allow the option to pick all times from one day (e.g. 4 time slots on Monday) and copy those time slots to another day (e.g. use the same time slots from Monday on Wednesday). This is to help avoid reenter times over and over
+2) Task List
+  - The creator of an event should be able able to add a task list to an event (e.g. bring soda, bring salad, OR prepare slides, contact so-and-so)
+  - All event attendees should be able to sign up for zero or more tasks
+3) Event Creator View
+  - The event creator should be able to quickly see who can attend, when, and what tasks are being handled
+4) Event Attendee View
+  - Event attendees should still be able to list all times they are available, and now can sign up to handle tasks
+  - An attendee can sign up for multiple tasks
+  - Multiple attendees cannot sign up for the same task
+  
+((copied from the class wiki))
+  
+ 5) fixing the other team's code
+  - Fixing grammar mistakes
+  - Fixing the way events were displayed
+  - Making it so that the user could choose which times he/she could attend the event
+  
+  ==========================
+  Comlexity is on a scale of 1 to 10 with ten being extremely complex and one being easy
+  1) Multi-Day Scheduling
+    Complexity: 10
+    
+    The code is written in such a way that we would need to find the appropriate boolians and the correct loops so that the user wouldn't be
+    thrown an error message when they tried to schedule multiple days. The hard part is ambiguous boolian names and finding the correct loop
+    in the code that is 3000 lines long and not commented very well. It will also be difficult to do the actual coding for this because of the
+    specifications from the customer. How many days should be considered multiple days? Can it span multiple years? So the event doesn't go from 3pm 
+    Friday to 2am on Saturday? The admin should be able to say they want the same times on Mondays and Wednesdays?
+    
+    This should take 10 hours.
+    
+   2) Task List
+    Complexity: 3
+    
+    For this, we need to add another loop to ask the admin what he/she wants to ask his/her guests to do. This shouldn't be too hard becasue it
+    requires a while loop where the admin can keep adding tasks until he/she decides to quit. 
+    
+    This should take 2 hours.
+    
+   3) Event Creator View
+    Complexity: 5
+    
+    This task requires us to decide how to format the tasks in the file. We need to make it so that the creator can see who is doing what.
+    We need to make a list from the tasks he/she entered and have the name of the guest doing the task to the right of it.
+    
+    This should take 4 hours.
+    
+    4) Event Attendee View
+      Complexity: 5
+      
+      For this task, we need to go through the list of tasks requested by the admin to see which one have people doing them and which don't. 
+      Then we need to display the tasks that don't have any names by them to the attendee. Then we need a loop that will let the guest sign
+      up for tasks until he/she decides to quit.
+      
+      This should take 5 hours.
+      
+     5) Fixing the Other Team's Code
+      Complexity: 6
+      
+      To fix the grammar we just edited what was said in the couts. It took Kaiser a long time to fix the attendee view. We also need
+      to make a list of the time blocks that the guest can sign up for so that we can loop it until he/she chooses all the blocks he/she wants 
+      to sign up for. 
+      
+      This should take 15 hours.

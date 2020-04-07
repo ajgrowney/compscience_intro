@@ -1,0 +1,215 @@
+\hypertarget{classexec}{}\section{exec Class Reference}
+\label{classexec}\index{exec@{exec}}
+
+
+{\ttfamily \#include $<$exec.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classexec_a2fac94db8f997a01a590c01478662339}{exec} ()
+\item 
+\hyperlink{classexec_a663a64f17c5431dc01a829f5633e4f56}{$\sim$exec} ()
+\item 
+bool \hyperlink{classexec_ab114315e1bb0daff8f96dc03e7c88392}{admin} (bool ultimate\+Event\+Check)
+\item 
+void \hyperlink{classexec_a924407f4d277807e949aa9e97470f536}{user} ()
+\item 
+void \hyperlink{classexec_a4cf771a565711689023aa75141f82c52}{print} (bool time)
+\item 
+std\+::string \hyperlink{classexec_ade14fc20cd40b2d5e3e8e5abbda382d4}{make12\+Hr} (int num)
+\item 
+std\+::string \hyperlink{classexec_a24a4ca6c8f63a73ed38ddc8e9d015c46}{format24\+Hr} (int num)
+\item 
+void \hyperlink{classexec_aad3ea9a2cd99fc28471062719b85b1f6}{run} ()
+\item 
+void \hyperlink{classexec_af6f7f6a6d2e09aa2d2616dddb58af53a}{test} ()
+\item 
+bool \hyperlink{classexec_a1d2075b76a47a05795d8ac9d6fb24cbe}{update\+Event} (std\+::string event\+Name\+Check)
+\item 
+bool \hyperlink{classexec_abf1c735a300deae3f5de4bf6891f2190}{event\+Check} (std\+::string event\+Name\+Check)
+\item 
+bool \hyperlink{classexec_a7e711b54128bd8ff8039886ce4ce6fb3}{time\+Check} (int time, int len)
+\item 
+bool \hyperlink{classexec_afc82b1343e127d9a7bdc36f050bdf605}{time\+Check} (int time, int len, bool time\+Mode)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Executive class. This defines all of the executive class\textquotesingle{} private member variables and public methods. \begin{DoxyAuthor}{Author}
+Giovanni Artavia 
+
+Brandon Lammey 
+
+Dylan Herrig 
+
+James Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{exec@{exec}!exec@{exec}}
+\index{exec@{exec}!exec@{exec}}
+\subsubsection[{\texorpdfstring{exec()}{exec()}}]{\setlength{\rightskip}{0pt plus 5cm}exec\+::exec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classexec_a2fac94db8f997a01a590c01478662339}{}\label{classexec_a2fac94db8f997a01a590c01478662339}
+Constructor for the exec class. \index{exec@{exec}!````~exec@{$\sim$exec}}
+\index{````~exec@{$\sim$exec}!exec@{exec}}
+\subsubsection[{\texorpdfstring{$\sim$exec()}{~exec()}}]{\setlength{\rightskip}{0pt plus 5cm}exec\+::$\sim$exec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classexec_a663a64f17c5431dc01a829f5633e4f56}{}\label{classexec_a663a64f17c5431dc01a829f5633e4f56}
+Destructor for the exec class. 
+
+\subsection{Member Function Documentation}
+\index{exec@{exec}!admin@{admin}}
+\index{admin@{admin}!exec@{exec}}
+\subsubsection[{\texorpdfstring{admin(bool ultimate\+Event\+Check)}{admin(bool ultimateEventCheck)}}]{\setlength{\rightskip}{0pt plus 5cm}bool exec\+::admin (
+\begin{DoxyParamCaption}
+\item[{bool}]{ultimate\+Event\+Check}
+\end{DoxyParamCaption}
+)}\hypertarget{classexec_ab114315e1bb0daff8f96dc03e7c88392}{}\label{classexec_ab114315e1bb0daff8f96dc03e7c88392}
+Public method that takes in no arguments and does not return. Grants user to use admin options. Details\+: Able to create events (creates date object and prints to text file) and preview the current list of events. 
+\begin{DoxyParams}{Parameters}
+{\em ultimate\+Event\+Check} & is the first parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if the file has been created, true otherwise. 
+\end{DoxyReturn}
+\index{exec@{exec}!event\+Check@{event\+Check}}
+\index{event\+Check@{event\+Check}!exec@{exec}}
+\subsubsection[{\texorpdfstring{event\+Check(std\+::string event\+Name\+Check)}{eventCheck(std::string eventNameCheck)}}]{\setlength{\rightskip}{0pt plus 5cm}bool exec\+::event\+Check (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{event\+Name\+Check}
+\end{DoxyParamCaption}
+)}\hypertarget{classexec_abf1c735a300deae3f5de4bf6891f2190}{}\label{classexec_abf1c735a300deae3f5de4bf6891f2190}
+Public method that takes in one argument as a string and returns a bool. Details\+: Searches the .txt file for the event. 
+\begin{DoxyParams}{Parameters}
+{\em event\+Name\+Check} & is the first parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the event was found in the list, false otherwise. 
+\end{DoxyReturn}
+\index{exec@{exec}!format24\+Hr@{format24\+Hr}}
+\index{format24\+Hr@{format24\+Hr}!exec@{exec}}
+\subsubsection[{\texorpdfstring{format24\+Hr(int num)}{format24Hr(int num)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string exec\+::format24\+Hr (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{classexec_a24a4ca6c8f63a73ed38ddc8e9d015c46}{}\label{classexec_a24a4ca6c8f63a73ed38ddc8e9d015c46}
+Public method that takes in one argument as an int and returns a string. Details\+: Formats 24hour int into a readable string (00\+:00). 
+\begin{DoxyParams}{Parameters}
+{\em num} & is the first parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+formatted string. 
+\end{DoxyReturn}
+\index{exec@{exec}!make12\+Hr@{make12\+Hr}}
+\index{make12\+Hr@{make12\+Hr}!exec@{exec}}
+\subsubsection[{\texorpdfstring{make12\+Hr(int num)}{make12Hr(int num)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string exec\+::make12\+Hr (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{classexec_ade14fc20cd40b2d5e3e8e5abbda382d4}{}\label{classexec_ade14fc20cd40b2d5e3e8e5abbda382d4}
+Public method that takes in one argument as an int and returns a string. Details\+: Converts 24hour to 12hour format and formats text (00\+:00 with AM or PM) for easy readablility. 
+\begin{DoxyParams}{Parameters}
+{\em num} & is the first parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+formatted string. 
+\end{DoxyReturn}
+\index{exec@{exec}!print@{print}}
+\index{print@{print}!exec@{exec}}
+\subsubsection[{\texorpdfstring{print(bool time)}{print(bool time)}}]{\setlength{\rightskip}{0pt plus 5cm}void exec\+::print (
+\begin{DoxyParamCaption}
+\item[{bool}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{classexec_a4cf771a565711689023aa75141f82c52}{}\label{classexec_a4cf771a565711689023aa75141f82c52}
+Public method that takes in one argument as a bool and does not return. Details\+: Creates linked list, accesses text file, creates date objects, and places date objects into sorted \hyperlink{classlinkedList}{linked\+List}. Prints \hyperlink{classlinkedList}{linked\+List} in readable form to terminal (uses time parameter to determine 12/24 hr clock). \index{exec@{exec}!run@{run}}
+\index{run@{run}!exec@{exec}}
+\subsubsection[{\texorpdfstring{run()}{run()}}]{\setlength{\rightskip}{0pt plus 5cm}void exec\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classexec_aad3ea9a2cd99fc28471062719b85b1f6}{}\label{classexec_aad3ea9a2cd99fc28471062719b85b1f6}
+Public method that takes in no arguments and does not return. Details\+: Runs the program and calls to admin or user based on user input. \index{exec@{exec}!test@{test}}
+\index{test@{test}!exec@{exec}}
+\subsubsection[{\texorpdfstring{test()}{test()}}]{\setlength{\rightskip}{0pt plus 5cm}void exec\+::test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classexec_af6f7f6a6d2e09aa2d2616dddb58af53a}{}\label{classexec_af6f7f6a6d2e09aa2d2616dddb58af53a}
+Public method that takes in no arguments and does not return. Details\+: Used for testing \hyperlink{classlinkedList}{linked\+List} sort and early printing. \index{exec@{exec}!time\+Check@{time\+Check}}
+\index{time\+Check@{time\+Check}!exec@{exec}}
+\subsubsection[{\texorpdfstring{time\+Check(int time, int len)}{timeCheck(int time, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}bool exec\+::time\+Check (
+\begin{DoxyParamCaption}
+\item[{int}]{time, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{classexec_a7e711b54128bd8ff8039886ce4ce6fb3}{}\label{classexec_a7e711b54128bd8ff8039886ce4ce6fb3}
+Public method that takes in two argument and returns a bool. Details\+: Checks to see if given time is valid. 
+\begin{DoxyParams}{Parameters}
+{\em time} & is the first parameter. \\
+\hline
+{\em len} & is the second parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if time is valid, false otherwise. 
+\end{DoxyReturn}
+\index{exec@{exec}!time\+Check@{time\+Check}}
+\index{time\+Check@{time\+Check}!exec@{exec}}
+\subsubsection[{\texorpdfstring{time\+Check(int time, int len, bool time\+Mode)}{timeCheck(int time, int len, bool timeMode)}}]{\setlength{\rightskip}{0pt plus 5cm}bool exec\+::time\+Check (
+\begin{DoxyParamCaption}
+\item[{int}]{time, }
+\item[{int}]{len, }
+\item[{bool}]{time\+Mode}
+\end{DoxyParamCaption}
+)}\hypertarget{classexec_afc82b1343e127d9a7bdc36f050bdf605}{}\label{classexec_afc82b1343e127d9a7bdc36f050bdf605}
+Public method that takes in two argument and returns a bool. Details\+: Checks to see if given time is valid. time\+Mode is true if in 24 hour mode, false is 12 hour. 
+\begin{DoxyParams}{Parameters}
+{\em time} & is the first parameter. \\
+\hline
+{\em len} & is the second parameter. \\
+\hline
+{\em time\+Mode} & is the third parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if time is valid, false otherwise. 
+\end{DoxyReturn}
+\index{exec@{exec}!update\+Event@{update\+Event}}
+\index{update\+Event@{update\+Event}!exec@{exec}}
+\subsubsection[{\texorpdfstring{update\+Event(std\+::string event\+Name\+Check)}{updateEvent(std::string eventNameCheck)}}]{\setlength{\rightskip}{0pt plus 5cm}bool exec\+::update\+Event (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{event\+Name\+Check}
+\end{DoxyParamCaption}
+)}\hypertarget{classexec_a1d2075b76a47a05795d8ac9d6fb24cbe}{}\label{classexec_a1d2075b76a47a05795d8ac9d6fb24cbe}
+Public method that takes in one argument as a string and returns a bool. Details\+: Searches the .txt file and updates attendence. 
+\begin{DoxyParams}{Parameters}
+{\em event\+Name\+Check} & is the first parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the event was found in the list, false otherwise. 
+\end{DoxyReturn}
+\index{exec@{exec}!user@{user}}
+\index{user@{user}!exec@{exec}}
+\subsubsection[{\texorpdfstring{user()}{user()}}]{\setlength{\rightskip}{0pt plus 5cm}void exec\+::user (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classexec_a924407f4d277807e949aa9e97470f536}{}\label{classexec_a924407f4d277807e949aa9e97470f536}
+Public method that takes in no arguments and does not return. Grants user to use user options. Details\+: Able preview the current list of events and then select which event they\textquotesingle{}d like to attend (Updates text file). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+exec.\+h\item 
+exec.\+hpp\end{DoxyCompactItemize}

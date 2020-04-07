@@ -1,0 +1,41 @@
+<?php
+
+//Connecting to mySQL
+$servername = "mysql.eecs.ku.edu";
+$username = "agrowney";
+$password = 'P@$$word123';
+
+$conn = new mysqli($servername,$username,$password, $username);
+if($conn->connect_error){
+  die("Connection Failed: ".$conn->connect_error);
+}
+
+?>
+<html>
+<head>
+  <link rel="stylesheet" href="css/main_deletePost.css">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Simple Message Board</h1>
+  </div>
+
+  <form action="DeletePost.php" method="post">
+    <table><th>Delete?</th><th>Author</th><th>Content</th>
+      <?php
+        $sql = "SELECT * FROM Posts;";
+        $result = $conn->query($sql);
+        if($result->num_rows > 0){
+          while($row = $result->fetch_assoc()){
+            echo "<tr><td><input name='postList[]' value='".$row['post_id']."'type='checkbox'></td><td>".$row['author_id']."</td><td>".$row['content']."</td></tr>";
+            }
+        }else{
+            echo "User has not posted yet\n";
+        }
+       ?>
+     </table>
+     <input type="submit" value="Delete Posts">
+  </form>
+</body>
+</html>

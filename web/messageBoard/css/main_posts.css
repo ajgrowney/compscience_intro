@@ -1,0 +1,18 @@
+body{
+  background-color: #D8D8D8;
+}
+#post_content_text{
+  width: 35%;
+  border-radius: 3%;
+  border: 1px solid black;
+  height: 15em;
+}
+.text_post{
+  text-align:justify;
+}
+input[type=submit]{
+  background-color: #DAF7A6;
+  border: none;
+  border-radius: 25%;
+  margin-top: 1em;
+}

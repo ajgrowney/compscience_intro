@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <center><h3 id="welcome">Welcome To<br>Simple Message Board</h3>
+    <div class="newUserHeader">
+      <p id="newUserHeader">Create New User</p>
+    </div>
+
+    <form action="CreateUser.php" onsubmit="return required();" method="post">
+      <p id="username_prompt">Enter New Username: <input id="newuser_id" type="text" name="user_id"></p>
+      <input type="submit" value="Submit">
+    </form>
+  </center>
+
+  <script src="js/CreateUser.js"></script>
+</body>
+</html>

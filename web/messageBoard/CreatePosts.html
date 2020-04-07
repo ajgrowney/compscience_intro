@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main_posts.css">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+  <div class="header">
+    <h1> Simple Message Board </h1>
+  </div>
+  <center>
+
+    <h3 id="welcome_posts">Create Post</h3>
+
+    <form onsubmit="return postValidation();" action="CreatePosts.php" method="post" id="postCreation">
+
+      <!--User ID Field-->
+      <p id="postCreate_user_id">Enter User ID: <input name="userID" type="text"></p>
+
+      <div class="text_post">
+        <!--Post Text Field-->
+        <center><input id="post_content_text" type="text" name="post_content"></center><br>
+      </div>
+
+      <!--Submission Button-->
+      <input type="submit" value="Submit Post">
+    </form>
+
+    <script src="js/CreatePosts.js"></script>
+
+  </center>
+</body>
+</html>

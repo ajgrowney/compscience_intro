@@ -1,0 +1,17 @@
+body{
+  background-color: #DAF7A6;
+  color: inherit;
+}
+.links{
+  align-content: center;
+}
+
+.link{
+  display: block;
+  background-color: #C8C8C8;
+  border-radius: 5%;
+  border: none;
+  height: 3em;
+  width: 10em;
+  margin-top: 1em;
+}

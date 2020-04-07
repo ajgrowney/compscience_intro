@@ -1,0 +1,97 @@
+\hypertarget{classnode}{}\section{node$<$ T $>$ Class Template Reference}
+\label{classnode}\index{node$<$ T $>$@{node$<$ T $>$}}
+
+
+{\ttfamily \#include $<$node.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnode_a8b84a889cdb6da341c5c930ec13ed7ff}{node} (T value)
+\item 
+void \hyperlink{classnode_aa2f5fc0ca069085519055c6efd385144}{set\+Value} (T value)
+\item 
+void \hyperlink{classnode_abfa39769660ee5f0ce6918f0ec6d4a4a}{set\+Next} (\hyperlink{classnode}{node}$<$ T $>$ $\ast$next)
+\item 
+T \hyperlink{classnode_ae59897d6bd56d78aa85819bb070c2d6d}{get\+Value} () const 
+\item 
+\hyperlink{classnode}{node}$<$ T $>$ $\ast$ \hyperlink{classnode_a38bfeb3c2ff0ff94689ad444bd60f1b3}{get\+Next} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+class node$<$ T $>$}
+
+Node class. This defines all of the node class\textquotesingle{} private member variables and public methods. \begin{DoxyAuthor}{Author}
+Giovanni Artavia 
+
+Brandon Lammey 
+
+Dylan Herrig 
+
+James Glass 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{node@{node}!node@{node}}
+\index{node@{node}!node@{node}}
+\subsubsection[{\texorpdfstring{node(\+T value)}{node(T value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf node}$<$ T $>$\+::{\bf node} (
+\begin{DoxyParamCaption}
+\item[{T}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{classnode_a8b84a889cdb6da341c5c930ec13ed7ff}{}\label{classnode_a8b84a889cdb6da341c5c930ec13ed7ff}
+Constructor for the node class. Includes a value and a pointer to the next node. 
+
+\subsection{Member Function Documentation}
+\index{node@{node}!get\+Next@{get\+Next}}
+\index{get\+Next@{get\+Next}!node@{node}}
+\subsubsection[{\texorpdfstring{get\+Next() const }{getNext() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf node}$<$ T $>$ $\ast$ {\bf node}$<$ T $>$\+::get\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classnode_a38bfeb3c2ff0ff94689ad444bd60f1b3}{}\label{classnode_a38bfeb3c2ff0ff94689ad444bd60f1b3}
+Public method that takes no arguments and returns a node pointer. \begin{DoxyReturn}{Returns}
+the next node in the \hyperlink{classlinkedList}{linked\+List}. 
+\end{DoxyReturn}
+\index{node@{node}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!node@{node}}
+\subsubsection[{\texorpdfstring{get\+Value() const }{getValue() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T {\bf node}$<$ T $>$\+::get\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classnode_ae59897d6bd56d78aa85819bb070c2d6d}{}\label{classnode_ae59897d6bd56d78aa85819bb070c2d6d}
+Public method that takes no arguments and returns a value of type T. \begin{DoxyReturn}{Returns}
+value held in the node. 
+\end{DoxyReturn}
+\index{node@{node}!set\+Next@{set\+Next}}
+\index{set\+Next@{set\+Next}!node@{node}}
+\subsubsection[{\texorpdfstring{set\+Next(node$<$ T $>$ $\ast$next)}{setNext(node< T > *next)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf node}$<$ T $>$\+::set\+Next (
+\begin{DoxyParamCaption}
+\item[{{\bf node}$<$ T $>$ $\ast$}]{next}
+\end{DoxyParamCaption}
+)}\hypertarget{classnode_abfa39769660ee5f0ce6918f0ec6d4a4a}{}\label{classnode_abfa39769660ee5f0ce6918f0ec6d4a4a}
+Public method that takes one argument of type node pointer and does not return. Details\+: Sets a pointer on the next node in the \hyperlink{classlinkedList}{linked\+List}. 
+\begin{DoxyParams}{Parameters}
+{\em next} & the first argument. \\
+\hline
+\end{DoxyParams}
+\index{node@{node}!set\+Value@{set\+Value}}
+\index{set\+Value@{set\+Value}!node@{node}}
+\subsubsection[{\texorpdfstring{set\+Value(\+T value)}{setValue(T value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf node}$<$ T $>$\+::set\+Value (
+\begin{DoxyParamCaption}
+\item[{T}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{classnode_aa2f5fc0ca069085519055c6efd385144}{}\label{classnode_aa2f5fc0ca069085519055c6efd385144}
+Public method that takes one argument of type T and does not return. Details\+: Sets the node\textquotesingle{}s value. 
+\begin{DoxyParams}{Parameters}
+{\em value} & the first argument. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+node.\+h\item 
+node.\+hpp\end{DoxyCompactItemize}
