@@ -51,41 +51,51 @@ void hello_handler(const shared_ptr< Session > session)
 	int content_length = request -> get_header("Content-Length", 0);
 	session->fetch(content_length, []( const shared_ptr<Session> session, const Bytes & body)
 	{
-		print(body.data());
-		map<string,string> res { {"hello", "world"} };
-		string response_body = dumps(res);
+		string response_body = dumps({ {"hello", "world"} });
 		string content_length = to_string(response_body.length());
-		session->close(OK, dumps(res), { JSON, { "Content-Length", content_length } });
+		session->close(OK, response_body, { JSON, { "Content-Length", content_length } });
 	});
 }
+
 float make_calculation(string operation, float val1, float val2)
 {
-	if (operation == "add")
-	{
+	if (operation == "add") {
 		return Add(val1,val2);
-	}
-	else
-	{
+	} else if (operation == "sub") {
+		return Subtract(val1, val2);
+	} else if (operation == "mult") {
+		return Multiply(val1, val2);
+	} else if (operation == "div") {
+		return Divide(val1, val2);
+	} else {
 		return 0.0;
 	}
 }
 
-void equation_handler(const shared_ptr< Session > session) 
+void calc_handler(const shared_ptr< Session > session) 
 {
 	const auto request = session -> get_request();
-	int content_length = request -> get_header("Content-Length", 0);
-	session->fetch(content_length, [&content_length]( const shared_ptr<Session> session, const Bytes & body)
+	int request_length = request -> get_header("Content-Length", 0);
+	session->fetch(request_length, [&request_length]( const shared_ptr<Session> session, const Bytes & body)
 	{
-		string req_body(reinterpret_cast<const char*>(body.data()), content_length);
+		// Load Request Body
+		string req_body(reinterpret_cast<const char*>(body.data()), request_length);
 		map<string,string> json_req = loads(req_body);
+		
+		// Extract Parameters
 		string op = json_req["op"];
-		string v1 = json_req["v1"];
-		string v2 = json_req["v2"];
-		float answer = make_calculation(op, stof(v1), stof(v2));
-		map<string,string> res { {"answer", to_string(answer)} };
-		string response_body = dumps(res);
+		float v1 = stof(json_req["v1"]);
+		float v2 = stof(json_req["v2"]);
+		
+		// Make Calculation
+		float answer = make_calculation(op, v1, v2);
+		
+		// Make Response
+		string response_body = dumps({ {"answer", to_string(answer)} });
 		string response_length = to_string(response_body.length());
-		session->close(OK, dumps(res), { JSON, { "Content-Length", response_length } });
+		
+		// Send Response
+		session->close(OK, response_body, { JSON, { "Content-Length", response_length } });
 	});
 }
 
@@ -94,7 +104,7 @@ int main(int argc, char* argv[])
 {
 	Api* a = new Api("0.0.0.0", 8000);
 	a->add_http_resource("GET", "/hello", hello_handler);
-	a->add_http_resource("POST", "/equation", equation_handler);
+	a->add_http_resource("POST", "/calculation", calc_handler);
 	a->serve();
 	return 0;
 }
