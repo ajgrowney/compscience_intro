@@ -1,4 +1,6 @@
-main:
-	g++ main.cpp -o main libs/mathLib.cpp
+build:
+	g++ main.cpp -o program libs/mathLib.cpp
+run:
+	./program
 clean:
 	rm *.o
