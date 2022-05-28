@@ -1,6 +1,4 @@
-main:
-	g++ main.cpp -I/usr/local/lib/restbed/distribution/include -L /usr/local/lib/restbed/distribution/library -lrestbed libs/json.hpp libs/mathLib.o -o dist/main
-libs:
-	g++ -c libs/mathLib.cpp -o libs/mathLib.o
+build:
+	g++ -I"/usr/local/lib/restbed/distribution/include" main.cpp -L"/usr/local/lib/restbed/distribution/library" -lrestbed libs/json.cpp libs/mathLib.cpp -o prog
 run:
-	LD_LIBRARY_PATH=/usr/local/lib/restbed/distribution/library ./dist/main
+	LD_LIBRARY_PATH=/usr/local/lib/restbed/distribution/library ./prog

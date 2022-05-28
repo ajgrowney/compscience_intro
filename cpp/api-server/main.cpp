@@ -1,7 +1,7 @@
 #include <iostream>
 #include <restbed>
-#include "libs/mathLib.h"
-#include "libs/json.hpp"
+#include "mathLib.h"
+#include "json.h"
 
 using namespace json;
 using namespace std;
@@ -37,6 +37,7 @@ class Api {
 			_resources.push_back(res);
 			return;
 		}
+		~Api() {}
 	private:
 		shared_ptr<Settings> _settings;
 		vector<shared_ptr<Resource>> _resources;

@@ -2,8 +2,6 @@
 // compile with: cl /c /EHsc MathLibrary.cpp
 // post-build command: lib MathLibrary.obj
 
-#include "mathLib.h"
-
 namespace MathLibrary
 {
     	namespace Arithmetic {
